@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+<body>
+    
+
+    <div class="container" id="container">
+  
+    <div class="form-container sign-in-container">
+
+    <form>
+
+    <h2>Entrar</h2>
+     <input type="email" placeholder="email"/>
+     <input type="password" placeholder="Senha"/>
+     <button type="submit">Entrar</button>
+    </form>  
+</div>
+
+     <div class="form-container sign-up-container">
+
+    
+
+            <form>
+                <h2>Criar Conta</h2>
+
+                
+                <input type="text" placeholder="Nome"/>
+
+               
+                <input type="email"  placeholder="Email">
+
+               
+                <input type="password"  placeholder="Senha">
+
+
+                <button type="submit">Cadastrar</button>
+           </form>
+        </div>
+
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+
+                    <h2>Bem-vindo de volta!</h2>
+
+                    <p>Para se manter conectado, faça login com seus dados</p>
+                    <button class="ghost" id="signIn">Entrar</button>
+                </div>
+
+
+                <div class="overlay-panel overlay-right">
+                    <h2>Olá, Amigo!</h2>
+
+                    <p>Cadastre seus dados e aproveite sua jornada.</p>
+
+                    <button class="ghost" id="signUp">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+    const container  = document.getElementById('container');
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+  
+     signInButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+    });
+
+
+</script>
+
+</body>
+</html>
